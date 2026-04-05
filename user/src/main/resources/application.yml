@@ -14,5 +14,11 @@ spring:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
 
+  rabbitmq:
+    addresses: amqps://jaragua.lmq.cloudamqp.com:5671
+    username: dvkajqsi
+    password: NSmLnbt0p4bnU4ch7tL5H7w08weK4dh2
+    virtual-host: dvkajqsi
+
 server:
   port: 8081
