@@ -24,7 +24,7 @@ public class UserController {
         this.userService = userService;
     }
 
-    @PostMapping("/user")
+    @PostMapping("/users")
     public ResponseEntity<UserModel> createUser(@RequestBody UserDto userDto) {
         var userModel = new UserModel();
         BeanUtils.copyProperties(userDto, userModel);
