@@ -3,8 +3,8 @@ spring:
     name: user
   datasource:
     url: jdbc:postgresql://localhost:5435/ms-user-ms
-    username: postgres-user
-    password: postgres-password
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
@@ -20,8 +20,8 @@ spring:
 
   rabbitmq:
     addresses: amqps://jaragua.lmq.cloudamqp.com:5671
-    username: dvkajqsi
-    password: NSmLnbt0p4bnU4ch7tL5H7w08weK4dh2
+    username: ${RABBITMQ_USERNAME}
+    password: ${RABBITMQ_PASSWORD}
     virtual-host: dvkajqsi
 
 server:
